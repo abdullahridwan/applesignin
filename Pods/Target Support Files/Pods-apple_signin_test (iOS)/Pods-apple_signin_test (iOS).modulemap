@@ -1,0 +1,6 @@
+framework module Pods_apple_signin_test__iOS_ {
+  umbrella header "Pods-apple_signin_test (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
