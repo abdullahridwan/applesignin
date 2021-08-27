@@ -13,11 +13,11 @@ import AuthenticationServices
 import Firebase
 
 
+
 class LoginViewModel: ObservableObject {
     @Published var nonce = ""
     @AppStorage("log_status") var log_Status = false
     
-
     
     
     func authenticate(credential: ASAuthorizationAppleIDCredential){

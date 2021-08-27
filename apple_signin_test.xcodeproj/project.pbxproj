@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		B5674D5B26D699EC007C185F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5674D2F26D699EC007C185F /* Assets.xcassets */; };
 		B5674D6E26D69A84007C185F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D6D26D69A84007C185F /* Home.swift */; };
 		B5674D7026D69A8C007C185F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D6F26D69A8C007C185F /* Login.swift */; };
-		B5674D7326D69B34007C185F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B5674D7226D69B34007C185F /* SwiftPackageProductDependency */; };
 		B5674D7526D69B5E007C185F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D7426D69B5E007C185F /* LoginViewModel.swift */; };
 		B5674D7726D69F9D007C185F /* birgith-roosipuu-7m9mA2qljog-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5674D7626D69F9D007C185F /* birgith-roosipuu-7m9mA2qljog-unsplash.jpg */; };
 		B5674D7926D6BD4B007C185F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5674D7826D6BD4B007C185F /* GoogleService-Info.plist */; };
@@ -78,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5674D7326D69B34007C185F /* BuildFile in Frameworks */,
 				C9C3D65C20399ACF20245D36 /* Pods_apple_signin_test__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,15 +230,13 @@
 				B5674D3026D699EC007C185F /* Sources */,
 				B5674D3126D699EC007C185F /* Frameworks */,
 				B5674D3226D699EC007C185F /* Resources */,
+				BEFFF1D2512B4E4229B38FAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "apple_signin_test (iOS)";
-			packageProductDependencies = (
-				B5674D7226D69B34007C185F /* SwiftPackageProductDependency */,
-			);
 			productName = "apple_signin_test (iOS)";
 			productReference = B5674D3426D699EC007C185F /* apple_signin_test.app */;
 			productType = "com.apple.product-type.application";
@@ -333,9 +329,6 @@
 				Base,
 			);
 			mainGroup = B5674D2726D699EA007C185F;
-			packageReferences = (
-				B5674D7126D69B34007C185F /* RemoteSwiftPackageReference */,
-			);
 			productRefGroup = B5674D3526D699EC007C185F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -426,6 +419,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFFF1D2512B4E4229B38FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apple_signin_test (iOS)/Pods-apple_signin_test (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apple_signin_test (iOS)/Pods-apple_signin_test (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-apple_signin_test (iOS)/Pods-apple_signin_test (iOS)-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -835,25 +845,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B5674D7126D69B34007C185F /* RemoteSwiftPackageReference */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B5674D7226D69B34007C185F /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B5674D7126D69B34007C185F /* RemoteSwiftPackageReference */;
-			productName = FirebaseAuth;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5674D2826D699EA007C185F /* Project object */;
 }

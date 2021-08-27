@@ -6,6 +6,15 @@ target 'apple_signin_test (iOS)' do
   use_frameworks!
 
   # Pods for apple_signin_test (iOS)
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
+  # pod 'Firebase/Firestore'
+
+  # Optionally, include the Swift extensions if you're using Swift.
+  # pod 'FirebaseFirestoreSwift'
+
   # pod 'Firebase/Firestore'
   # pod 'FirebaseCore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
   # pod 'FirebaseFirestore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
